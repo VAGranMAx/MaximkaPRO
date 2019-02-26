@@ -30,12 +30,18 @@ namespace ConsoleApp1
         }
         public void Vvivod()
         {
-            Console.WriteLine($"Название: {name} Калибр: {kalibr} Дальность {dalnost}");
+            Console.WriteLine($"Название: {Name} Калибр: {Kalibr} Дальность {Dalnost}");
         }
         class Program
         {
             static void Main(string[] args)
             {
+                Weopen myWeopen = new Weopen();
+                myWeopen.Shot();
+                myWeopen.Vvivod();
+                Console.ReadKey();
+
+
             }
         }
     }
